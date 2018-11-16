@@ -13,6 +13,8 @@ variable "ami" {}
 variable "subnet_id" {}
 variable "vpc_security_group_id" {}
 variable "identity" {}
+variable "public_key" {}
+variable "private_key" {}
 
 variable "num_webs" {
   default = "1"
