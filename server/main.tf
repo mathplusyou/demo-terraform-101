@@ -5,6 +5,8 @@ variable "num_webs" {}
 variable "subnet_id" {}
 variable "vpc_security_group_id" {}
 variable "identity" {}
+variable "public_key" {}
+variable "private_key" {}
 
 resource "aws_key_pair" "training" {
   key_name   = "${var.identity}-key"
